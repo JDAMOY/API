@@ -1,6 +1,6 @@
 ## 目录
 
-- [总体流程图](#1)
+- [RAP快速使用教程](#1)
 - [1: Get GR detail](#2)
 - [2: Get proforma template](#3)
 - [3: Get conversation history [TODO: user title user logo]](#4)
