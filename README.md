@@ -1,4 +1,15 @@
-## RAP快速使用教程
+## 目录
+
+- [总体流程图](#1)
+- [1: Get GR detail](#2)
+- [2: Get proforma template](#3)
+- [3: Get conversation history [TODO: user title user logo]](#4)
+- [4: Get workflow result [TODO JD fill fullfill this]](#5)
+- [5: Put some comments.](#6)
+- [6: Approve or Reject a proforma](#7)
+- [7: gr list](#8)
+
+<h2 id="1">RAP快速使用教程</h2>
 
 RAP = Proxy + Mock, 它首先会对请求的url进行代理到RAP系统中，根据它的Mock规则生成响应的JSON数据
 
@@ -24,7 +35,7 @@ Mock规则完整文档：http://mockjs.com/examples.html (PS: 规则不区分大
 
 5️⃣ RAP使用手册：https://github.com/thx/RAP/wiki/user_manual_cn
 
-## 1: Get GR detail
+<h2 id="2">1: Get GR detail</h2>
 ####   localhost:8888/tradeshift-backend/rest/external/documents/4100d1ca-4b28-4b78-90b8-9410bdf6a644
   ```javascript
   {
@@ -244,10 +255,10 @@ Mock规则完整文档：http://mockjs.com/examples.html (PS: 规则不区分大
   ]
 }
 ```
-## 2: Get proforma template 
+<h2 id="3">2: Get proforma template</h2>
 ####   
 
-## 3: Get conversation history [TODO: user title user logo] 
+<h2 id="4">3: Get conversation history [TODO: user title user logo]</h2>
 ####   localhost:8888/tradeshift-backend/rest/external/conversations/documents/a714ed57-e96a-56db-a445-7e4a85ae487f?enrich=false
 ```javascript
 {
@@ -306,13 +317,13 @@ Mock规则完整文档：http://mockjs.com/examples.html (PS: 规则不区分大
 }
 ```
 
-## 4: Get workflow result [TODO JD fill fullfill this] 
+<h2 id="5">4: Get workflow result [TODO JD fill fullfill this]</h2>
 ####  
 
-## 5: Put some comments. 
+<h2 id="6">5: Put some comments.</h2>
 ####  
 
-## 6: Approve or Reject a proforma
+<h2 id="7">6: Approve or Reject a proforma</h2>
 ####  localhost:8888/tradeshift-backend/rest/external/documents/08000000-a87f-53da-95b7-476222200021?documentProfileId=tradeshift.status.1.0
 ```javascript
 {
@@ -365,7 +376,7 @@ Mock规则完整文档：http://mockjs.com/examples.html (PS: 规则不区分大
    "DocumentType":"ApplicationResponseType"
 }
 ```
-## 7: gr list
+<h2 id="8">7: gr list</h2>
 ####  localhost:8888/tradeshift-backend/rest/external/documents?withouttag=archived&withouttag=AP_DOCUMENT_DRAFT&_onlyIndex=true&stag=sales&stag=purchases&stag=draft&type=receiptadvice&totals=true&ordering=Date&ascending=false&onlydeleted=false&onlydrafts=false&limit=20&page=0&includeSourceDocuments=true
 ```javascript
 {
