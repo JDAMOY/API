@@ -1,3 +1,24 @@
+## RAP快速使用教程
+
+地址：http://rap.taobao.org/
+
+查看接口返回JSON的地址：http://rap.taobao.org/mockjsdata/11188/{请求的url}
+>注意路径中`mockjsdata`返回的是JSON，`mockjs`返回的是规则匹配乱起八糟的东西，`11188`是项目的ID
+
+1. 注册一个新账号
+
+2. 管理员在该项目添加新账号的权限：
+![image](https://cloud.githubusercontent.com/assets/12554487/21424410/af833960-c87d-11e6-991c-22d494d733c4.png)
+
+3. 使用Mock规则手册：http://rap.taobao.org/workspace/myWorkspace.do?projectId=2348#13808
+
+   详细Mock规则文档：http://mockjs.com/examples.html (PS: 规则不区分大小写)
+>详细Mock规则文档比较新，有些规则现有的RAP系统不一定完全支持，比如c开头的`@ctitle`这些生成中文的规则目前还不支持，为了确定自己的规则是否写对，可以现在`测试tab`下面写一下看看是否达到预期目的，再应用到真实的Mock接口，以免影响前端的界面显示。
+
+4. RAP使用在线视频教程：http://thx.github.io/RAP/study.html
+
+5. RAP使用手册：https://github.com/thx/RAP/wiki/user_manual_cn
+
 ## 1: Get GR detail
 ####   localhost:8888/tradeshift-backend/rest/external/documents/4100d1ca-4b28-4b78-90b8-9410bdf6a644
   ```javascript
