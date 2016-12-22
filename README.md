@@ -339,3 +339,180 @@
    "DocumentType":"ApplicationResponseType"
 }
 ```
+## 7: gr list
+####  localhost:8888/tradeshift-backend/rest/external/documents?withouttag=archived&withouttag=AP_DOCUMENT_DRAFT&_onlyIndex=true&stag=sales&stag=purchases&stag=draft&type=receiptadvice&totals=true&ordering=Date&ascending=false&onlydeleted=false&onlydrafts=false&limit=20&page=0&includeSourceDocuments=true
+```javascript
+{
+  "itemsPerPage": 20,
+  "itemCount": 3,
+  "indexing": false,
+  "numPages": 1,
+  "pageId": 0,
+  "Document": [
+    {
+      "DocumentId": "0000000e-a87f-53da-95b7-476222200023",
+      "ID": "10086002",
+      "URI": "http://localhost:8888/tradeshift-backend/rest/external/documents/0000000e-a87f-53da-95b7-476222200023",
+      "DocumentType": {
+        "type": "receiptadvice"
+      },
+      "State": "DRAFT",
+      "LastEdit": "2016-12-20T03:14:37.363Z",
+      "SenderCompanyName": "[Test] - Bilfinger EMS GmbH, Cloppenburg",
+      "Actor": {
+        "Created": "2016-10-14T15:31:42.935+08:00",
+        "FirstName": "중국어002联系",
+        "LastName": "002",
+        "Email": "najier01@163.com"
+      },
+      "ReceiverCompanyName": "Test Supplier for BF",
+      "Tags": {
+        "Tag": ["USED_IN_PROFORMA"]
+      },
+      "ItemInfos": [
+        {
+          "type": "document.total",
+          "value": "0.00"
+        },
+        {
+          "type": "document.issuedate",
+          "value": "2016-12-17"
+        }
+      ],
+      "ConversationStates": [],
+      "UnifiedState": "UNDETERMINED",
+      "Deleted": false,
+      "Properties": [
+        {
+          "scheme": "firstLineQuantity",
+          "value": "30"
+        },
+        {
+          "scheme": "firstLinePrice",
+          "value": "90.0"
+        },
+        {
+          "scheme": "firstLineName",
+          "value": "MacBook Air 2046"
+        }
+      ]
+    },
+    {
+      "DocumentId": "0000000e-a87f-53da-95b7-476222200022",
+      "ID": "10086001",
+      "URI": "http://localhost:8888/tradeshift-backend/rest/external/documents/0000000e-a87f-53da-95b7-476222200022",
+      "DocumentType": {
+        "type": "receiptadvice"
+      },
+      "State": "LOCKED",
+      "LastEdit": "2016-12-19T15:07:22.335Z",
+      "SenderCompanyName": "[Test] - Bilfinger EMS GmbH, Cloppenburg",
+      "Actor": {
+        "Created": "2016-10-14T15:31:42.935+08:00",
+        "FirstName": "중국어002联系",
+        "LastName": "002",
+        "Email": "najier01@163.com"
+      },
+      "ReceiverCompanyName": "Test Supplier for BF",
+      "Tags": {
+        "Tag": []
+      },
+      "ItemInfos": [
+        {
+          "type": "document.total",
+          "value": "0.00"
+        },
+        {
+          "type": "document.issuedate",
+          "value": "2016-12-17"
+        }
+      ],
+      "ProcessState": "PENDING",
+      "ConversationStates": [
+        {
+          "Axis": "PROCESS",
+          "State": "PENDING"
+        },
+        {
+          "Axis": "DELIVERY",
+          "State": "SENT"
+        }
+      ],
+      "UnifiedState": "DELIVERED",
+      "Deleted": false,
+      "Properties": [
+        {
+          "scheme": "firstLineQuantity",
+          "value": "130"
+        },
+        {
+          "scheme": "firstLinePrice",
+          "value": "190.0"
+        },
+        {
+          "scheme": "firstLineName",
+          "value": "MacBook Air 12046"
+        }
+      ]
+    },
+    {
+      "DocumentId": "6accbcf2-ba34-535d-8f8b-30b809799a0f",
+      "ID": "100001",
+      "URI": "http://localhost:8888/tradeshift-backend/rest/external/documents/6accbcf2-ba34-535d-8f8b-30b809799a0f",
+      "DocumentType": {
+        "type": "receiptadvice"
+      },
+      "State": "LOCKED",
+      "LastEdit": "2016-11-03T12:10:31.579Z",
+      "SenderCompanyName": "[Test] - Bilfinger EMS GmbH, Cloppenburg",
+      "Actor": {
+        "Created": "2016-10-14T15:31:42.935+08:00",
+        "FirstName": "중국어002联系",
+        "LastName": "002",
+        "Email": "najier01@163.com"
+      },
+      "ReceiverCompanyName": "Test Supplier for BF",
+      "Tags": {
+        "Tag": []
+      },
+      "ItemInfos": [
+        {
+          "type": "document.total",
+          "value": "0.00"
+        },
+        {
+          "type": "document.issuedate",
+          "value": "2016-08-17"
+        }
+      ],
+      "ProcessState": "PENDING",
+      "ConversationStates": [
+        {
+          "Axis": "PROCESS",
+          "State": "PENDING"
+        },
+        {
+          "Axis": "DELIVERY",
+          "State": "RECEIVED"
+        }
+      ],
+      "UnifiedState": "DELIVERED",
+      "Deleted": false,
+      "Properties": [
+        {
+          "scheme": "firstLineQuantity",
+          "value": "90"
+        },
+        {
+          "scheme": "firstLinePrice",
+          "value": "20.0"
+        },
+        {
+          "scheme": "firstLineName",
+          "value": "MacBook Air 2016"
+        }
+      ]
+    }
+  ]
+}
+```
