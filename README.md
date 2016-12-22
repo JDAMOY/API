@@ -367,7 +367,7 @@
       },
       "ReceiverCompanyName": "Test Supplier for BF",
       "Tags": {
-        "Tag": ["usedInProforma"]
+        "Tag": []
       },
       "ItemInfos": [
         {
@@ -384,16 +384,12 @@
       "Deleted": false,
       "Properties": [
         {
-          "scheme": "firstLineQuantity",
-          "value": "30"
+          "scheme": "proformaNumber",
+          "value": "100001,1000002"
         },
         {
-          "scheme": "firstLinePrice",
-          "value": "90.0"
-        },
-        {
-          "scheme": "firstLineName",
-          "value": "MacBook Air 2046"
+          "scheme": "orderNumber",
+          "value": "200002"
         }
       ]
     },
@@ -440,20 +436,7 @@
       ],
       "UnifiedState": "DELIVERED",
       "Deleted": false,
-      "Properties": [
-        {
-          "scheme": "firstLineQuantity",
-          "value": "130"
-        },
-        {
-          "scheme": "firstLinePrice",
-          "value": "190.0"
-        },
-        {
-          "scheme": "firstLineName",
-          "value": "MacBook Air 12046"
-        }
-      ]
+      "Properties": []
     },
     {
       "DocumentId": "6accbcf2-ba34-535d-8f8b-30b809799a0f",
@@ -498,20 +481,7 @@
       ],
       "UnifiedState": "DELIVERED",
       "Deleted": false,
-      "Properties": [
-        {
-          "scheme": "firstLineQuantity",
-          "value": "90"
-        },
-        {
-          "scheme": "firstLinePrice",
-          "value": "20.0"
-        },
-        {
-          "scheme": "firstLineName",
-          "value": "MacBook Air 2016"
-        }
-      ]
+      "Properties": []
     }
   ]
 }
