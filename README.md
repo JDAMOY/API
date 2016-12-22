@@ -367,7 +367,7 @@
       },
       "ReceiverCompanyName": "Test Supplier for BF",
       "Tags": {
-        "Tag": ["USED_IN_PROFORMA"]
+        "Tag": ["usedInProforma"]
       },
       "ItemInfos": [
         {
