@@ -523,3 +523,296 @@ Mock规则完整文档：http://mockjs.com/examples.html (PS: 规则不区分大
   ]
 }
 ```
+<h2 id="7">6: Approve or Reject a proforma</h2>
+####  http://localhost:8898/tradeshift-workflow/rest/external/workflow/matching/documents/6ab226ca-a5b4-5c78-b9b7-baa1f1e6c796/types/ProformaReceiptAdvice
+
+```javascript
+{
+  "Success": false,
+  "Skip": false,
+  "MatchInfo": {
+    "DocumentType": "PROFORMA",
+    "MatchType": "ProformaReceiptAdvice",
+    "DocumentId": "6ab226ca-a5b4-5c78-b9b7-baa1f1e6c796",
+    "DocumentNumber": "000017",
+    "Matchers": [
+      {
+        "Type": "LINEEXACTPRICE"
+      },
+      {
+        "Type": "LINEQUANTITY"
+      },
+      {
+        "Type": "LINEUNITCODE"
+      }
+    ],
+    "MatchTime": "2016-12-23T09:30:45.225+08:00"
+  },
+  "MatchingFailures": [
+    {
+      "Type": "Line",
+      "Fields": {
+        "Quantity": {
+          "Type": "Quantity",
+          "Value": "40",
+          "BaseValue": "30",
+          "ThresholdValue": "30",
+          "ThresholdPercent": "0",
+          "Error": {
+            "ErrorCode": "LineQuantityValueMismatch",
+            "Message": "Line quantity values do not match",
+            "ErrorDetail": [
+              {
+                "Key": "LineAmount",
+                "Value": "30"
+              },
+              {
+                "Key": "LineValueDiff",
+                "Value": "-10"
+              }
+            ],
+            "ValidationError": []
+          }
+        },
+        "Price": {
+          "Type": "Price",
+          "Value": "1000",
+          "BaseValue": "100",
+          "Error": {
+            "ErrorCode": "LinePriceMismatch",
+            "Message": "Line prices do not match",
+            "ErrorDetail": [
+              {
+                "Key": "LinePrice",
+                "Value": "100"
+              },
+              {
+                "Key": "LineValueDiff",
+                "Value": "900"
+              }
+            ],
+            "ValidationError": []
+          }
+        }
+      },
+      "BaseAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "30"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "123",
+            "DocumentType": "RECEIPT_ADVICE",
+            "DocumentId": "b07ad93a-fa52-4435-9b47-acb785f9b5c7",
+            "DocumentTime": "2016-09-28T00:00:00.000+08:00",
+            "LineId": "1",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "30"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "100"
+              }
+            }
+          }
+        ]
+      },
+      "MainAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "20"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "000017",
+            "DocumentType": "PROFORMA",
+            "DocumentId": "6ab226ca-a5b4-5c78-b9b7-baa1f1e6c796",
+            "DocumentTime": "2016-10-17T00:00:00.000+08:00",
+            "LineId": "1",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "20"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "1000"
+              }
+            }
+          }
+        ]
+      },
+      "TargetAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "20"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "000017",
+            "DocumentType": "PROFORMA",
+            "DocumentId": "fed0eae7-4438-59b6-bc68-2f0983d12659",
+            "DocumentTime": "2016-10-17T00:00:00.000+08:00",
+            "LineId": "1",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "20"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "100"
+              }
+            }
+          }
+        ]
+      },
+      "LineId": [
+        "1"
+      ]
+    },
+    {
+      "Type": "Line",
+      "Fields": {
+        "Quantity": {
+          "Type": "Quantity",
+          "Value": "40",
+          "BaseValue": "30",
+          "ThresholdValue": "30",
+          "ThresholdPercent": "0",
+          "Error": {
+            "ErrorCode": "LineQuantityValueMismatch",
+            "Message": "Line quantity values do not match",
+            "ErrorDetail": [
+              {
+                "Key": "LineAmount",
+                "Value": "30"
+              },
+              {
+                "Key": "LineValueDiff",
+                "Value": "-10"
+              }
+            ],
+            "ValidationError": []
+          }
+        },
+        "Price": {
+          "Type": "Price",
+          "Value": "1000",
+          "BaseValue": "100",
+          "Error": {
+            "ErrorCode": "LinePriceMismatch",
+            "Message": "Line prices do not match",
+            "ErrorDetail": [
+              {
+                "Key": "LinePrice",
+                "Value": "100"
+              },
+              {
+                "Key": "LineValueDiff",
+                "Value": "900"
+              }
+            ],
+            "ValidationError": []
+          }
+        }
+      },
+      "BaseAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "30"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "234",
+            "DocumentType": "RECEIPT_ADVICE",
+            "DocumentId": "21fd40be-2f9f-4db9-ba8b-a169c74ab5ca",
+            "DocumentTime": "2016-09-28T00:00:00.000+08:00",
+            "LineId": "1",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "30"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "100"
+              }
+            }
+          }
+        ]
+      },
+      "MainAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "20"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "000017",
+            "DocumentType": "PROFORMA",
+            "DocumentId": "6ab226ca-a5b4-5c78-b9b7-baa1f1e6c796",
+            "DocumentTime": "2016-10-17T00:00:00.000+08:00",
+            "LineId": "2",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "20"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "1000"
+              }
+            }
+          }
+        ]
+      },
+      "TargetAccumulation": {
+        "Totals": {
+          "Quantity": {
+            "Type": "Quantity",
+            "Value": "20"
+          }
+        },
+        "Parts": [
+          {
+            "DocumentNumber": "000017",
+            "DocumentType": "PROFORMA",
+            "DocumentId": "fed0eae7-4438-59b6-bc68-2f0983d12659",
+            "DocumentTime": "2016-10-17T00:00:00.000+08:00",
+            "LineId": "2",
+            "Fields": {
+              "Quantity": {
+                "Type": "Quantity",
+                "Value": "20"
+              },
+              "Price": {
+                "Type": "Price",
+                "Value": "100"
+              }
+            }
+          }
+        ]
+      },
+      "LineId": [
+        "2"
+      ]
+    }
+  ]
+}
+
+
+```
